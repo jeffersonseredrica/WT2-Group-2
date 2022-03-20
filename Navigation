@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  back-ground color: black;
+  color: gray;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+</style>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#blogs">Blogs</a></li>
+  <li><a href="#people">People</a></li>
+
+</ul>
+
+<a href="https://github.com/jeffersonseredrica/WT2-Group-2/tree/Home/
+">Home</a>
+
+<a href="https://github.com/jeffersonseredrica/WT2-Group-2/tree/Blogs/
+">Blogs</a>
+
+<a href=" https://github.com/jeffersonseredrica/WT2-Group-2/tree/People/
+">People</a>
+
+
+
+</body>
+</html>
+
 
