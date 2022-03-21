@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  back-ground color: black;
-  color: gray;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: bold;
-  font-variant: small-caps;
+
+body {
+margin: 0;
+
 }
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 10;
+background-color: #A3B6DD;
+position: fixed;
+top: 0;
+width: 100%;
+overflow: hidden;
+
+}
+
+li {
+float: left;
+}
+
+li a { 
+display: block;
+color: white;
+text-align: center;
+padding: 100px 20px;
+text-decoration: none;
+
+}
+
+li a: hover:not (.active) {
+background-color: #373A52;
+
+}
+
+.active{
+background-color: #37383A;
+}
+
 </style>
+</head>
+
+<body>
+
 <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#blogs">Blogs</a></li>
-  <li><a href="#people">People</a></li>
-
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="blogs" href="#blogs">Blogs</a></li>
+  <li><a class= "people" href="#people">People</a></li>
 </ul>
-
-<a href="https://github.com/jeffersonseredrica/WT2-Group-2/tree/Home/
-">Home</a>
-
-<a href="https://github.com/jeffersonseredrica/WT2-Group-2/tree/Blogs/
-">Blogs</a>
-
-<a href=" https://github.com/jeffersonseredrica/WT2-Group-2/tree/People/
-">People</a>
-
 
 
 </body>
