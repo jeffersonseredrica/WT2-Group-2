@@ -1,25 +1,109 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:#A3B6DD;">
 <head>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <title> STUDENT PROFILE </title>
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 0px;
+  background: #f6f6f2;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 1px;
+  font-size: 30px;
+  font-family: optima;
+  text-align: center;
+  background: #6fb3b8;
+
+}
+
+/* Add a card effect for articles */
+.card {
+   padding: 20px;
+   margin-top: 20px;
+}
+#navbar {
+  overflow: hidden;
+  padding: 14px;
+  text-align: center;
+  background-color: #388087;
+}
+
+#navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 27px;
+  font-family: Impact; 
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  position: absolute;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.p {
+	text-align: center;
+	
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+</style>
 </head>
+  <title> STUDENT PROFILE </title>
 <body>
 
-  <h1> Students Profile </h1>
+<div id="navbar">
+  <a href="C:\Users\USER\Documents\PILIMUN\ACT2C\2nd Sem\WEB TECH 2\Home.html">Home</a>
+  <a href="C:\Users\USER\Documents\PILIMUN\ACT2C\2nd Sem\WEB TECH 2\Blogs.html">Blogs</a>
+  <a href="C:\Users\USER\Documents\PILIMUN\ACT2C\2nd Sem\WEB TECH 2\StudentNumber.html">People</a>
+</div>
 
+  <div class="header">
+  <h2>Student Profile</h2>
+</div>
+<div class="card">
   <table>
-  
+ 
      <tr>
-       <table border = "2">
+       <table border = "2" align = "center" bgcolor ="white">
      </tr>
      
      <tr> 
-     <td> NAMES </td>
-     <td> STUDENT NUMBER </td>
-     <td> EMAIL ADDRESS </td>
-     <td> BIRTHDAY </td>
+     <thead>
+     <td bgcolor = "#6fb3b8"><strong> NAMES </strong></td>
+     <td bgcolor = "#6fb3b8"><strong> STUDENT NUMBER </strong></td>
+     <td bgcolor = "#6fb3b8"><strong> EMAIL ADDRESS </strong></td>
+     <td bgcolor = "#6fb3b8"><strong> BIRTHDAY </strong></td>
+     </thead>
      </tr>
      
 
@@ -255,6 +339,21 @@
 </tr>
 
   </table>
+  
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
